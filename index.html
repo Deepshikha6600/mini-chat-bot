@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chat">
+        <div class="chatContainer">
+            <!-- head part -->
+            <div class="cardHead">
+                <div class="belowHead">
+                    <img src="./images/pariIcon.jpg" alt="" class="icon">
+                    <h1 class="cardHeadHeading">Pari</h1>
+                    <img class="icon icon1"src="./images/mcIcon.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- body part -->
+            <div class="cardbody">
+                <div class="cardMsgList" id="msg-list">
+                    
+                </div>
+                <div class="chatDisplay noChatDisplay " id="noDisp">
+                        
+                        <button class="replyDisplay msgHi"  onclick="dispHi()">Hi</button>
+                        <button class="replyDisplay msgLike" onclick="dispLike();">I like you!</button>
+                        <button class="replyDisplay msgHate" onclick="dispHate();">I hate you!</button>
+                    
+                </div>
+                <div class="typeBar">
+                    <input type="text" id="messageInput" placeholder="Click here" onblur="hideReplys();"  onfocus="displayReplys();">
+                    <button id="deleteButton" onclick="delUserMsg();"><img src="./images/delIcon.png" alt="" class="delIcon"></button>
+                </div>
+
+
+
+            </div>
+
+           
+        </div>
+    </div>
+    
+
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

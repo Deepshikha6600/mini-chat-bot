@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+.chat {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(191, 191, 251);
+}
+.chatContainer {
+  height: 600px;
+  width: 900px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(92, 151, 176),
+    rgb(50, 50, 118),
+    rgb(46, 1, 46),
+    rgb(125, 35, 50)
+  );
+  display: flex;
+  border-radius: 3%;
+}
+.belowHead {
+  height: 70px;
+  width: 99.9%;
+  background-color: rgb(79, 79, 154);
+  position: relative;
+  top: 10px;
+  left: 0.35px;
+  border-radius: 0%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cardHead {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(237, 131, 216);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* box-shadow: 0px 0px 20px 0px  rgb(27, 26, 26); */
+}
+.icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin: 10px 20px 10px 50px;
+}
+.icon1 {
+  float: right;
+  border: 2px solid black;
+}
+.cardHeadHeading {
+  height: 30px;
+  width: 300px;
+  display: inline-block;
+  position: relative;
+  bottom: 35%;
+  color: wheat;
+}
+.cardbody {
+  height: 520px;
+  width: 900px;
+  position: absolute;
+  top: 135px;
+  padding: 30px;
+  /* background-color: rgb(231, 17, 17); */
+}
+.typeBar {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 480px;
+}
+#messageInput {
+  height: 50px;
+  width: 80%;
+  position: absolute;
+  bottom: 25px;
+  padding: 0px 20px;
+  left: 0px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(11, 9, 42);
+  font-size: 17px;
+}
+#deleteButton {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 25px;
+  right: 140px;
+  border-radius: 30px;
+  border: none;
+  margin-left: 10px;
+}
+.delIcon {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+.noChatDisplay {
+  opacity: 0;
+}
+.chatDisplay {
+  height: 100px;
+  width: 90%;
+  position: absolute;
+  bottom: 120px;
+  right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.replyDisplay {
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.replyDisplay:hover {
+  background-color: rgb(11, 9, 42);
+  color: white;
+}
+.cardMsgList {
+  height: 340px;
+  width: 800px;
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  /* background-color: aqua; */
+  margin: 10px 60px;
+}
+.cardMsgList::-webkit-scrollbar {
+  display: none;
+}
+.userMsg {
+  height: 40px;
+  width: 200px;
+  background-color: rgb(11, 9, 42);
+  color: wheat;
+  padding: 10px;
+  margin: 20px 0px 10px 550px;
+  border-radius: 10px 2px 10px 2px;
+  font-size: 18px;
+}
+.replyUserMsg {
+  height: 40px;
+  width: 200px;
+  background-color: rgb(158, 27, 136);
+  color: wheat;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 2px 10px 2px 10px;
+  font-size: 18px;
+}
